@@ -1,0 +1,37 @@
+.user-management {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .user-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .contribution {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .user-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .delete-button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #cc4c3c;
+  }
+  

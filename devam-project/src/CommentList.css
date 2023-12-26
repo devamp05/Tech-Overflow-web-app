@@ -1,0 +1,58 @@
+
+     .comment-item {
+      display: flex;
+      align-items: center; /* Align items vertically in the middle */
+    }
+    
+    .comment-content {
+      flex: 1;
+    }
+    
+    .reply-button-container {
+      margin-left: 10px;
+    }
+    
+    .reply-button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    
+    .reply-button i {
+      margin-left: 5px;
+    }
+    
+    .reply-input-container {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    
+    .reply-input-container input {
+      flex: 1;
+      margin-right: 10px;
+      padding: 5px;
+    }
+    
+    .post-reply-button,
+    .cancel-reply-button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    
+    .cancel-reply-button {
+      background-color: #f44336;
+      margin-right: 10px;
+    }
+    

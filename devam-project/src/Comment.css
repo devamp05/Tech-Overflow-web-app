@@ -1,0 +1,13 @@
+.commentClass {
+    margin-top: 16px;
+  }
+  
+  .comment-input {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .comment-input input {
+    flex: 1;
+  }
+  

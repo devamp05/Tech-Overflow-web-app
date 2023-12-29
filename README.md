@@ -5,7 +5,9 @@ start anyname
 copy the code in my src directory to anyname’s src directory
 in the root directory run commands 
 npm install mysql, npm install express and npm install cors.
-Then do docker-compose up to start the backend server.
+Then do docker-compose up to start the backend server.  
+
+
 Software-Architecture:
 For my Project I have used client-server architecture which includes React application for the frontend 
 (Client-side) and nodejs with express framework for the backend (server-side) and MySQL for the 
@@ -33,7 +35,10 @@ likes and dislikes tables:
 likes and dislikes tables are pretty much the same they are used to store likes and dislikes on a post or 
 somment. They store information like post_id, comment_id and the username. I had to create 2 tables 
 for them because a user can even dislike a post without ever liking it so I can’t just remove the like from 
-the likes table.
+the likes table.  
+
+
+
 Npm packages used:
 I have used npm packages:
 Express: for APIs.

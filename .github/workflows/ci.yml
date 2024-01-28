@@ -18,7 +18,7 @@ jobs:
       run: docker-compose up -d --build
 
     - name: Run npm test
-      run: docker exec -it $(docker-compose ps -q node1) npm test
+      run: docker exec $(docker-compose ps -q node1) npm test
 
     - name: Stop and remove Docker containers
       run: docker-compose down

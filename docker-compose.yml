@@ -17,5 +17,3 @@ services:
     depends_on:
       mysql:
         condition: service_started
-    stdin_open: true
-    tty: true

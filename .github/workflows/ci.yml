@@ -2,22 +2,23 @@ name: Docker Image CI
 
 on:
 #   push:
-#     branches: [ "main" ]
+#     branches: [main]
 #   pull_request:
-#     branches: [ "main" ]
-    workflow_dispatch:
+#     branches: [main]
+  workflow_dispatch:
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: |
-        docker login
-        docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-        docker run npm test
-      
+
+    - name: Build and run Docker containers
+      run: docker-compose up -d --build
+
+    - name: Run npm test
+      run: docker exec -it $(docker-compose ps -q node1) npm test
+
+    - name: Stop and remove Docker containers
+      run: docker-compose down

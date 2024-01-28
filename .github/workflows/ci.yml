@@ -18,8 +18,6 @@ jobs:
     - name: Build the Docker image
       run: |
         docker login
-        devam05
-        Devam05...
         docker build . --file Dockerfile --tag my-image-name:$(date +%s)
         docker run npm test
       
